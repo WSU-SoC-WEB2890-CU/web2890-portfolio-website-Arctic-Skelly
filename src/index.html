@@ -3,25 +3,278 @@
 
 <head>
   <meta charset="utf-8">
-  <title>Portfolio website</title>
+  <title>Portfolio of Allison Drysdale</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="robots" content="index,follow">
   <meta name="description" content="TODO: Portfolio website ...">
-
   <link rel="stylesheet" href="./stylesheets/main.scss">
 </head>
 
 <body>
-  <!-- Your HTML goes here -->
-  <h1 class="display-2 text-center my-5 py-5">
-    <span class="d-block py-5 mt-5">
-      <i class="bi bi-filetype-html text-primary"></i> / 
-      <i class="bi bi-filetype-css text-danger"></i> / 
-      <i class="bi bi-filetype-js text-success"></i>
-    </span>
-    
-    Portfolio Website
-  </h1>
+  <div id="skipLink">
+    <a href="#mainCont">Skip to main content</a>
+  </div>
+
+  <header class="py-3 text-center">
+    <a class="active text-dark name" aria-current="page" id="currentPage" href="index.html">Allison Drysdale</a>
+    <nav aria-label="main navigation">
+      <ul>
+        <li class="nav-item"><a class="nav-link text-dark focus-ring focus-ring-secondary" href="projects.html">Projects</a></li>
+        <li class="nav-item"><a class="nav-link text-dark focus-ring focus-ring-secondary" href="about.html">About Me</a></li>
+        <li class="nav-item"><a class="nav-link text-dark focus-ring focus-ring-secondary" href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main id="mainCont">
+    <div class="container-fluid jumbotron jumbotron-banner jumbotron-index pb-4 text-center text-white">
+      <div class="h1-cont bg-white">
+        <h1 class="display-3 fw-bold text-dark py-4">Welcome</h1>
+      </div>
+    </div>
+
+    <!-- THE SERVICES SECTION -->
+    <section id="services" class="services py-5">
+      <div class="container">
+        <div class="row text-center">
+          <h2 class="display-3 fw-bold">Our Services</h2>
+          <div class="heading-line mb-1"></div>
+        </div>
+        <div class="row pt-2 pb-2 mt-0 mb-3">
+          <div class="col-md-6 border-right">
+            <div class="p-3">
+              <h3 class="fw-bold text-capitalize text-center">
+                With just three simple steps, we can create a great website together!
+              </h3>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="p-4 text-start">
+              <p class="fw-light">
+                It's easy as 3.14159265!
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="container services-lg-up">
+        <div class="row">
+          <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 services mt-4">
+            <div class="services__content">
+              <i class="bi bi-envelope-fill"></i>
+              <h3 class="display-3--title mt-1">Step 1: Contact</h3>
+              <p class="lh-lg">
+                Clear communication is a top priority, and planning is the first step to any great project. We can discuss everything you have in mind for your site, from smooth functionality to stunning looks!
+              </p>
+              <button type="button" class="rounded-pill btn-rounded border-primary bg-secondary text-primary px-3 fw-bold" href="contact.html">Learn more
+                <span><i class="bi bi-arrow-right text-primary"></i></span>
+              </button>
+            </div>
+          </div>
+          <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 services mt-4 text-end">
+            <div class="services__pic">
+              <img src="./images/service-1.png" alt="sending emails illustration" class="img-fluid">
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 services mt-4 text-start">
+            <div class="services__pic">
+              <img src="./images/service-2.png" alt="css web development illustration" class="img-fluid">
+            </div>
+          </div>
+          <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 services mt-4">
+            <div class="services__content">
+              <i class="bi bi-code-slash"></i>
+              <h3 class="display-3--title mt-1">Step 2: Make</h3>
+              <p class="lh-lg">
+                With my budding skills in web design, and with a well thought out plan, I can create a website to your specifications! This includes crafting an accessible design, so that everyone can see what you have to offer!
+              </p>
+              <button type="button" class="rounded-pill btn-rounded border-primary bg-secondary text-primary px-3 fw-bold" href="contact.html">Learn more
+                <span><i class="bi bi-arrow-right text-primary"></i></span>
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 services mt-4">
+            <div class="services__content">
+              <i class="bi bi-gear-fill"></i>
+              <h3 class="display-3--title mt-1">Step 3: Updates</h3>
+              <p class="lh-lg">
+                Frequent updates showing my progress will allow for changes to be made when needs be, stiking a balance between what you see in your mind's eye and what I can accomplish.
+              </p>
+              <button type="button" class="rounded-pill btn-rounded border-primary bg-secondary text-primary px-3 fw-bold" href="contact.html">Learn more
+                <span><i class="bi bi-arrow-right text-primary"></i></span>
+              </button>
+            </div>
+          </div>
+          <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 services mt-4 text-end">
+            <div class="services__pic">
+              <img src="./images/service-3.png" alt="progress bar illustration" class="img-fluid">
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="container services-md-down">
+        <div class="col">
+          <div class="row">
+            <div class="services__pic">
+              <img src="./images/service-1.png" alt="sending emails illustration" class="img-fluid">
+            </div>
+          </div>
+          <div class="row border-bottom mb-5">
+            <div class="services__content">
+              <div class="icon d-block bi bi-envelope"></div>
+              <h3 class="display-3--title mt-1">Step 1: Contact</h3>
+              <p class="lh-lg">
+                Clear communication is a top priority, and planning is the first step to any great project. We can discuss everything you have in mind for your site, from smooth functionality to stunning looks!
+              </p>
+              <button type="button" class="rounded-pill btn-rounded border-primary bg-secondary text-primary px-3 fw-bold" href="contact.html">Learn more
+                <span><i class="bi bi-arrow-right text-primary"></i></span>
+              </button>
+            </div>
+          </div>
+          <div class="row">
+            <div class="services__pic">
+              <img src="./images/service-2.png" alt="css web development illustration" class="img-fluid">
+            </div>
+          </div>
+          <div class="row border-bottom mb-5">
+            <div class="services__content">
+              <div class="icon d-block bi bi-code-slash"></div>
+              <h3 class="display-3--title mt-1">Step 2: Make</h3>
+              <p class="lh-lg">
+                With my budding skills in web design, and with a well thought out plan, I can create a website to your specifications! This includes crafting an accessible design, so that everyone can see what you have to offer!
+              </p>
+              <button type="button" class="rounded-pill btn-rounded border-primary bg-secondary text-primary px-3 fw-bold" href="contact.html">Learn more
+                <span><i class="bi bi-arrow-right text-primary"></i></span>
+              </button>
+            </div>
+          </div>
+          <div class="row">
+            <div class="services__pic">
+              <img src="./images/service-3.png" alt="progress bar illustration" class="img-fluid">
+            </div>
+          </div>
+          <div class="row border-bottom mb-5">
+            <div class="services__content">
+              <div class="icon d-block bi bi-gear"></div>
+              <h3 class="display-3--title mt-1">Step 3: Updates</h3>
+              <p class="lh-lg">
+                Frequent updates showing my progress will allow for changes to be made when needs be, stiking a balance between what you see in your mind's eye and what I can accomplish.
+              </p>
+              <button type="button" class="rounded-pill btn-rounded border-primary bg-secondary text-primary px-3 fw-bold" href="contact.html">Learn more
+                <span><i class="bi bi-arrow-right text-primary"></i></span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- THE LANGUAGES SECTION -->
+    <section id="languages" class="languages">
+      <div class="container">
+        <div class="row text-center">
+          <h2 class="display-3 fw-bold">Experienced In:</h2>
+          <div class="heading-line mb-5"></div>
+        </div>
+      </div>
+
+      <div class="container bg-white p-5 xl-up">
+        <div class="row">
+          <div class="col">
+            <div class="languages__logo-box">
+              <img src="./images/language-1.png" alt="HTML 5 logo" title="HTML 5 Logo" class="img-fluid">
+            </div>
+          </div>
+          <div class="col">
+            <div class="languages__logo-box">
+              <img src="./images/language-2.png" alt="CSS 3 logo" title="CSS 3 Logo" class="img-fluid">
+            </div>
+          </div>
+          <div class="col">
+            <div class="languages__logo-box">
+              <img src="./images/language-3.png" alt="Sass logo" title="Sass Logo" class="img-fluid">
+            </div>
+          </div>
+          <div class="col">
+            <div class="languages__logo-box">
+              <img src="./images/language-4.png" alt="Bootstrap logo" title="Bootstrap Logo" class="img-fluid">
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="container bg-white p-5 lg-down">
+        <div class="row">
+          <div class="col">
+            <div class="languages__logo-box">
+              <img src="./images/language-1.png" alt="HTML 5 logo" title="HTML 5 Logo" class="img-fluid">
+            </div>
+          </div>
+          <div class="col">
+            <div class="languages__logo-box">
+              <img src="./images/language-2.png" alt="CSS 3 logo" title="CSS 3 Logo" class="img-fluid">
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col">
+            <div class="languages__logo-box">
+              <img src="./images/language-3.png" alt="Sass logo" title="Sass Logo" class="img-fluid">
+            </div>
+          </div>
+          <div class="col">
+            <div class="languages__logo-box">
+              <img src="./images/language-4.png" alt="Bootstrap logo" title="Bootstrap Logo" class="img-fluid">
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--THE CARDS SECTION-->
+    <div class="container pt-5">
+      <div class="row text-center">
+        <h2 class="display-3 fw-bold">Other Credentials</h2>
+        <div class="heading-line mb-5"></div>
+      </div>
+    </div>
+
+    <div id="credentials">
+      <div class="card mx-5 mb-4 col-lg-6 col-lg-3">
+        <div class="card-body">
+          <h5 class="card-title">In Progress: Associate of Applied Science</h5>
+          <p class="card-text">Soon enough I'll have a college degree in this field!</p>
+        </div>
+      </div>
+
+      <div class="card mx-5 col-lg-6 col-lg-3">
+        <div class="card-body">
+          <h5 class="card-title">In Progress: Certificate of Proficiency</h5>
+          <p class="card-text">This certificate in Programming Essentials will prove that I've gone above and beyond in my website-building skills!</p>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer class="mt-5">
+    <div class="row">
+      <div class="col">
+        <i class="bi bi-envelope-open-fill"></i>
+        <h5 class="display-3--title">Contact</h5>
+        <a href="allisondrysdale@mail.weber.edu">allisondrysdale@mail.weber.edu</a>
+      </div>
+      <div class="col">
+        <i class="bi bi-award-fill"></i>
+        <h5 class="display-3--title">University</h5>
+        <p>Weber State University</p>
+      </div>
+    </div>
+  </footer>
 
   <script type="module" src="./javascripts/main.js"></script>
 </body>
