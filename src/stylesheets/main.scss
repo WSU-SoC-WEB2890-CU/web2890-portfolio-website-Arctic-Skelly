@@ -13,6 +13,11 @@ $teal: #41BAD5;
 @import "bootstrap-icons/font/bootstrap-icons.scss";
 
 //Modifying code
+
+//- Hamburger
+//   - Fix hamburger alignment
+//- Vertically center btn text
+
 body {
     background-color: $primary;
     color: $dark;
@@ -32,11 +37,6 @@ h2, h3, h4, h5 {
     font-family: 'Zilla Slab', serif;
 }
 
-i {
-  color: $secondary;
-  font-size: 2.2rem;
-}
-
 #skipLink {
     position: absolute;
     left: -10000px;
@@ -54,10 +54,11 @@ i {
 
 header {
     display: flex;
-    align-items: center;
-    border-bottom: 2px solid $dark;
-    margin-bottom: 1rem;
     padding-left: 2rem;
+
+    #currentPage {
+      background-color: white;
+    }
 
     .name {
       text-decoration: none;
@@ -92,14 +93,22 @@ header {
                   background-color: white;
               }
           }
+        }
       }
+
+  button {
+    margin-left: 85vw;
+    margin-top: -3rem;
   }
 }
 
 .jumbotron {
-  padding-top: 500px;
-  padding-bottom: 500px;
+  padding-top: 250px;
   background: linear-gradient(rgba($primary, .3), rgba($dark, .8)), url("../images/hero-keyboard.jpg") no-repeat center top / cover;
+}
+
+.h1-cont {
+  margin-bottom: 225px;
 }
 
 button {
@@ -111,13 +120,13 @@ button {
 //Services
 .services-lg-up {
     display: block;
-  }
+}
   
-  .services-md-down {
+.services-md-down {
     display: none;
-  }
+}
   
-  .services {
+.services {
     position: relative;
     padding: 1rem 0;
   
@@ -149,8 +158,14 @@ button {
   
     &__pic {
       max-width: 100%;
+      filter: drop-shadow(0 0 0.75rem $teal);
     }
-  }
+
+    i {
+      color: $secondary;
+      font-size: 2.2rem;
+    }
+}
   
   @include media-breakpoint-down(md) {
     .services-lg-up {
@@ -164,7 +179,12 @@ button {
 
 //Languages
 .xl-up {
-  display: block;
+  display: flex;
+  justify-content: space-around;
+
+  .col {
+    margin: 0 1vw;
+  }
 }
 
 .lg-down {
@@ -188,17 +208,19 @@ button {
 }
 
 @include media-breakpoint-down(lg) {
-  .xl-up {
-    display: none;
-  }
-
-  .lg-down {
-    display: block;
-  }
-
-  .languages__logo-box {
-    height: 170px;
-    width: 170px;
+  #languages {
+    .xl-up {
+      display: none;
+    }
+  
+    .lg-down {
+      display: block;
+    }
+  
+    .languages__logo-box {
+      height: 170px;
+      width: 170px;
+    }
   }
 }
 
@@ -209,16 +231,53 @@ button {
   }
 }
 
+//Cards
+#credentials {
+  display: flex;
+  justify-content: space-evenly;
+
+  .card {
+    width: 40vw;
+    border: none;
+  }
+}
+
+//About Me
+.abt-mobile {
+  display: none;
+}
+
+.abt-desktop {
+  .abt-item {
+    display: flex;
+    justify-content: space-evenly;
+  }
+}
+
+.abt-img {
+  border: solid 5px $teal;
+}
+
+@media (max-width: 1200px) {
+  .abt-mobile {
+    display: block;
+  }
+  
+  .abt-desktop {
+    display: none;
+  }
+}
+
 //Footer
 footer {
   background-color: $teal;
 
-  .row {
+  .footer-items {
     display: flex;
-    justify-content:space-around;
+    justify-content: space-evenly;
+  }
 
-    i {
-      color: $dark;
-    }
+  i {
+    font-size: 2.2rem;
   }
 }

@@ -15,20 +15,34 @@
     <a href="#mainCont">Skip to main content</a>
   </div>
 
-  <header class="py-3 text-center">
-    <a class="active text-dark name" aria-current="page" id="currentPage" href="index.html">Allison Drysdale</a>
-    <nav aria-label="main navigation">
-      <ul>
-        <li class="nav-item"><a class="nav-link text-dark focus-ring focus-ring-secondary" href="projects.html">Projects</a></li>
-        <li class="nav-item"><a class="nav-link text-dark focus-ring focus-ring-secondary" href="about.html">About Me</a></li>
-        <li class="nav-item"><a class="nav-link text-dark focus-ring focus-ring-secondary" href="contact.html">Contact</a></li>
-      </ul>
+  <!--
+    Note: I sincerely apologize for the tardiness of this project.
+    As you can see, several improvements have been made. I hope that
+    this is acceptable.
+  -->
+
+  <header class="container-fluid py-3 text-center">
+    <nav aria-label="main navigation" class="navbar navbar-expand-lg">
+      <div class="container-fluid">
+        <a class="active text-dark name" aria-current="page" id="currentPage" href="index.html">Allison Drysdale</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span><i class="bi bi-list text-dark"></i></span>
+        </button>
+        <div class="collapse navbar-collapse ms-auto" id="navbarSupportedContent">
+          <ul class="navbar-nav">
+            <li class="nav-item"><a class="nav-link text-dark focus-ring focus-ring-secondary" href="projects.html">Projects</a></li>
+            <li class="nav-item"><a class="nav-link text-dark focus-ring focus-ring-secondary" href="about.html">About Me</a></li>
+            <li class="nav-item"><a class="nav-link text-dark focus-ring focus-ring-secondary" href="contact.html">Contact Me</a></li>
+          </ul>
+        </div>
+      </div>
     </nav>
   </header>
+
   <main id="mainCont">
     <div class="container-fluid jumbotron jumbotron-banner jumbotron-index pb-4 text-center text-white">
-      <div class="h1-cont bg-white">
-        <h1 class="display-3 fw-bold text-dark py-4">Welcome</h1>
+      <div class="h1-cont d-inline-flex bg-white">
+        <h1 class="display-3 fw-bold text-dark py-4 px-5">Welcome</h1>
       </div>
     </div>
 
@@ -66,8 +80,8 @@
               <p class="lh-lg">
                 Clear communication is a top priority, and planning is the first step to any great project. We can discuss everything you have in mind for your site, from smooth functionality to stunning looks!
               </p>
-              <button type="button" class="rounded-pill btn-rounded border-primary bg-secondary text-primary px-3 fw-bold" href="contact.html">Learn more
-                <span><i class="bi bi-arrow-right text-primary"></i></span>
+              <button type="button" class="rounded-pill btn-rounded border-primary bg-secondary text-primary px-3 fw-bold" href="contact.html"><span class="">Learn more</span>
+                <span><i class="bi bi-arrow-right text-primary focus-ring focus-ring-white"></i></span>
               </button>
             </div>
           </div>
@@ -91,7 +105,7 @@
                 With my budding skills in web design, and with a well thought out plan, I can create a website to your specifications! This includes crafting an accessible design, so that everyone can see what you have to offer!
               </p>
               <button type="button" class="rounded-pill btn-rounded border-primary bg-secondary text-primary px-3 fw-bold" href="contact.html">Learn more
-                <span><i class="bi bi-arrow-right text-primary"></i></span>
+                <span><i class="bi bi-arrow-right text-primary focus-ring focus-ring-white"></i></span>
               </button>
             </div>
           </div>
@@ -105,7 +119,7 @@
                 Frequent updates showing my progress will allow for changes to be made when needs be, stiking a balance between what you see in your mind's eye and what I can accomplish.
               </p>
               <button type="button" class="rounded-pill btn-rounded border-primary bg-secondary text-primary px-3 fw-bold" href="contact.html">Learn more
-                <span><i class="bi bi-arrow-right text-primary"></i></span>
+                <span><i class="bi bi-arrow-right text-primary focus-ring focus-ring-white"></i></span>
               </button>
             </div>
           </div>
@@ -132,7 +146,7 @@
                 Clear communication is a top priority, and planning is the first step to any great project. We can discuss everything you have in mind for your site, from smooth functionality to stunning looks!
               </p>
               <button type="button" class="rounded-pill btn-rounded border-primary bg-secondary text-primary px-3 fw-bold" href="contact.html">Learn more
-                <span><i class="bi bi-arrow-right text-primary"></i></span>
+                <span><i class="bi bi-arrow-right text-primary focus-ring focus-ring-white"></i></span>
               </button>
             </div>
           </div>
@@ -149,7 +163,7 @@
                 With my budding skills in web design, and with a well thought out plan, I can create a website to your specifications! This includes crafting an accessible design, so that everyone can see what you have to offer!
               </p>
               <button type="button" class="rounded-pill btn-rounded border-primary bg-secondary text-primary px-3 fw-bold" href="contact.html">Learn more
-                <span><i class="bi bi-arrow-right text-primary"></i></span>
+                <span><i class="bi bi-arrow-right text-primary focus-ring focus-ring-white"></i></span>
               </button>
             </div>
           </div>
@@ -166,7 +180,7 @@
                 Frequent updates showing my progress will allow for changes to be made when needs be, stiking a balance between what you see in your mind's eye and what I can accomplish.
               </p>
               <button type="button" class="rounded-pill btn-rounded border-primary bg-secondary text-primary px-3 fw-bold" href="contact.html">Learn more
-                <span><i class="bi bi-arrow-right text-primary"></i></span>
+                <span><i class="bi bi-arrow-right text-primary focus-ring focus-ring-white"></i></span>
               </button>
             </div>
           </div>
@@ -221,7 +235,7 @@
             </div>
           </div>
         </div>
-        <div class="row">
+        <div class="row mt-5">
           <div class="col">
             <div class="languages__logo-box">
               <img src="./images/language-3.png" alt="Sass logo" title="Sass Logo" class="img-fluid">
@@ -237,40 +251,42 @@
     </section>
 
     <!--THE CARDS SECTION-->
-    <div class="container pt-5">
-      <div class="row text-center">
-        <h2 class="display-3 fw-bold">Other Credentials</h2>
-        <div class="heading-line mb-5"></div>
-      </div>
-    </div>
-
-    <div id="credentials">
-      <div class="card mx-5 mb-4 col-lg-6 col-lg-3">
-        <div class="card-body">
-          <h5 class="card-title">In Progress: Associate of Applied Science</h5>
-          <p class="card-text">Soon enough I'll have a college degree in this field!</p>
+    <section class="mt-5">
+      <div class="container pt-5">
+        <div class="row text-center">
+          <h2 class="display-3 fw-bold">Other Credentials</h2>
+          <div class="heading-line mb-5"></div>
         </div>
       </div>
 
-      <div class="card mx-5 col-lg-6 col-lg-3">
-        <div class="card-body">
-          <h5 class="card-title">In Progress: Certificate of Proficiency</h5>
-          <p class="card-text">This certificate in Programming Essentials will prove that I've gone above and beyond in my website-building skills!</p>
+      <div id="credentials">
+        <div class="card mx-5">
+          <div class="card-body">
+            <h4 class="card-title">In Progress: Associate of Applied Science</h4>
+            <p class="card-text mt-2">Soon enough I'll have a college degree in this field!</p>
+          </div>
+        </div>
+
+        <div class="card mx-5">
+          <div class="card-body">
+            <h4 class="card-title">In Progress: Certificate of Proficiency</h4>
+            <p class="card-text mt-2">This certificate in Programming Essentials will prove that I've gone above and beyond in my website-building skills!</p>
+          </div>
         </div>
       </div>
-    </div>
+    </section>
   </main>
 
   <footer class="mt-5">
-    <div class="row">
-      <div class="col">
+    <div class="footer-items pt-4">
+      <div>
         <i class="bi bi-envelope-open-fill"></i>
-        <h5 class="display-3--title">Contact</h5>
-        <a href="allisondrysdale@mail.weber.edu">allisondrysdale@mail.weber.edu</a>
+        <h4 class="display-3--title">Contact</h4>
+        <a class="text-dark" href="allisondrysdale@mail.weber.edu">allisondrysdale@mail.weber.edu</a>
       </div>
-      <div class="col">
+      <div>
         <i class="bi bi-award-fill"></i>
-        <h5 class="display-3--title">University</h5>
+        <h4 class="display-3--title">University</h4>
         <p>Weber State University</p>
       </div>
     </div>
