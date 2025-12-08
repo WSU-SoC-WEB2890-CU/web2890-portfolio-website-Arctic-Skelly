@@ -33,12 +33,36 @@
     </nav>
   </header>
   
-  <main id="mainCont">
+  <main id="contactPage" aria-labelledby="contactPage">
     <div class="container-fluid jumbotron jumbotron-banner jumbotron-index pb-4 text-center text-white">
       <div class="h1-cont d-inline-flex bg-white">
         <h1 class="display-3 fw-bold text-dark py-4 px-5">Contact Me</h1>
       </div>
     </div>
+
+    <section id="abt-dev" class="abt-dev py-5 container">
+      <div class="row text-center mb-5">
+        <h2 class="display-3 fw-bold">Interested?</h2>
+        <div class="heading-line mb-1"></div>
+        <div class="p-3">
+          <h3 class="fw-bold text-capitalize text-center">
+            Send me a message! Let's get started building a great website together.
+          </h3>
+        </div>
+      </div>
+
+      <form class="contact-form section">
+        <div class="mb-3">
+          <label class="form-label"><h3 class="display-3--title mt-1">Email Address</h3></label>
+          <input type="email" class="form-control" id="email-input" aria-describedby="emailHelp">
+        </div>
+        <div class="mb-3">
+          <label class="form-label"><h3 class="display-3--title mt-2">Message</h3></label>
+          <textarea type="email" class="form-control" id="message-input" aria-describedby="emailHelp"></textarea>
+        </div>
+        <button type="submit" class="rounded-pill btn-rounded border-primary bg-secondary text-primary px-3 py-2 mt-3 fw-bold" href="contact.html"><span>Submit</span></button>
+      </form>
+    </section>
   </main>
 
   <footer class="mt-5">
