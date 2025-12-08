@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>Contact Me - Allison Drysdale</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="index,follow">
+  <meta name="description" content="TODO: Portfolio website ...">
+  <link rel="stylesheet" href="./stylesheets/main.scss">
+</head>
+
+<body>
+  <div id="skipLink">
+    <a href="#mainCont">Skip to main content</a>
+  </div>
+
+  <header class="container-fluid py-3 text-center">
+    <nav aria-label="main navigation" class="navbar navbar-expand-lg">
+      <div class="container-fluid">
+        <a class="active text-dark name" href="index.html">Allison Drysdale</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span><i class="bi bi-list text-dark"></i></span>
+        </button>
+        <div class="collapse navbar-collapse ms-auto" id="navbarSupportedContent">
+          <ul class="navbar-nav">
+            <li class="nav-item"><a class="nav-link text-dark focus-ring focus-ring-secondary" href="projects.html">Projects</a></li>
+            <li class="nav-item"><a class="nav-link text-dark focus-ring focus-ring-secondary" href="about.html">About Me</a></li>
+            <li class="nav-item" aria-current="page" id="currentPage"><a class="nav-link text-dark focus-ring focus-ring-secondary" href="contact.html">Contact Me</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+  
+  <main id="contactPage" aria-labelledby="contactPage">
+    <div class="container-fluid jumbotron jumbotron-banner jumbotron-index pb-4 text-center text-white">
+      <div class="h1-cont d-inline-flex bg-white">
+        <h1 class="display-3 fw-bold text-dark py-4 px-5">Contact Me</h1>
+      </div>
+    </div>
+
+    <section id="abt-dev" class="abt-dev py-5 container">
+      <div class="row text-center mb-5">
+        <h2 class="display-3 fw-bold">Interested?</h2>
+        <div class="heading-line mb-1"></div>
+        <div class="p-3">
+          <h3 class="fw-bold text-capitalize text-center">
+            Send me a message! Let's get started building a great website together.
+          </h3>
+        </div>
+      </div>
+
+      <form class="contact-form section">
+        <div class="mb-3">
+          <label class="form-label"><h3 class="display-3--title mt-1">Email Address</h3></label>
+          <input type="email" class="form-control" id="email-input" aria-describedby="emailHelp">
+        </div>
+        <div class="mb-3">
+          <label class="form-label"><h3 class="display-3--title mt-2">Message</h3></label>
+          <textarea type="email" class="form-control" id="message-input" aria-describedby="emailHelp"></textarea>
+        </div>
+        <button type="submit" class="rounded-pill btn-rounded border-primary bg-secondary text-primary px-3 py-2 mt-3 fw-bold" href="contact.html"><span>Submit</span></button>
+      </form>
+    </section>
+  </main>
+
+  <footer class="mt-5">
+    <div class="footer-items pt-4">
+      <div>
+        <i class="bi bi-envelope-open-fill"></i>
+        <h4 class="display-3--title">Contact</h4>
+        <a class="text-dark" href="allisondrysdale@mail.weber.edu">allisondrysdale@mail.weber.edu</a>
+      </div>
+      <div>
+        <i class="bi bi-award-fill"></i>
+        <h4 class="display-3--title">University</h4>
+        <p>Weber State University</p>
+      </div>
+    </div>
+  </footer>
+
+  <script type="module" src="./javascripts/main.js"></script>
+</body>
+</html>

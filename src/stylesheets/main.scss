@@ -1,3 +1,308 @@
-/* Your styles go here */
+@use 'sass:color';
+@import url('https://fonts.googleapis.com/css2?family=Arvo:ital,wght@0,400;0,700;1,400;1,700&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Zilla+Slab:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap');
+
+//Before Bootstrap
+$primary: #cceef3;
+$secondary: #4689BD;
+$light: #CEE6F2;
+$dark: #254954;
+$teal: #41BAD5;
+
+//Imports
 @import "bootstrap/scss/bootstrap.scss";
-@import "bootstrap-icons/font/bootstrap-icons.css";
+@import "bootstrap-icons/font/bootstrap-icons.scss";
+
+//Modifying code
+
+//- Hamburger
+//   - Fix hamburger alignment
+//- Vertically center btn text
+
+body {
+    background-color: $primary;
+    color: $dark;
+    font-family: 'Nunito', system-ui, sans-serif;
+    font-size: 1.25rem;
+}
+
+h1 {
+    font-family: 'Arvo', serif;
+}
+
+h2 {
+  border-bottom: solid 5px $teal;
+}
+
+h2, h3, h4, h5 {
+    font-family: 'Zilla Slab', serif;
+}
+
+#skipLink {
+    position: absolute;
+    left: -10000px;
+    top: auto;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+
+    &:focus{
+        position: static;
+        width: auto;
+        height: auto;
+    }
+}
+
+header {
+    display: flex;
+    padding-left: 2rem;
+
+    #currentPage {
+      background-color: white;
+    }
+
+    .name {
+      text-decoration: none;
+      font-size: 1.6rem;
+      padding: .5rem 1rem;
+
+      &:hover {
+        background-color: white;
+      }
+    }
+
+    font-family: 'Arvo', serif;
+    font-weight: bold;
+    font-size: 1.5rem;
+
+    ul {
+      display: flex;
+      justify-content: space-around;
+      list-style: none;
+      margin-bottom: 0;
+
+      li {
+          margin: 0 2rem;
+          padding: 1rem;
+
+          a {
+              text-decoration: none;
+              font-weight: bold;
+              font-size: 1.25rem;
+
+              &:hover {
+                  background-color: white;
+              }
+          }
+        }
+      }
+
+  button {
+    margin-left: 85vw;
+    margin-top: -3rem;
+  }
+}
+
+.jumbotron {
+  padding-top: 250px;
+  background: linear-gradient(rgba($primary, .3), rgba($dark, .8)), url("../images/hero-keyboard.jpg") no-repeat center top / cover;
+}
+
+.h1-cont {
+  margin-bottom: 225px;
+}
+
+button {
+  &:hover {
+    background-color: $teal;
+  }
+}
+
+//Services
+.services-lg-up {
+    display: block;
+}
+  
+.services-md-down {
+    display: none;
+}
+  
+.services {
+    position: relative;
+    padding: 1rem 0;
+  
+    &__content {
+      padding: 1rem;
+      margin-top: 0;
+  
+      p {
+        font-size: 1.20rem;
+  
+        @include media-breakpoint-up(lg) {
+          font-size: 1.25rem;
+        }
+      }
+  
+      @include media-breakpoint-up(lg) {
+        margin-top: 5rem;
+      }
+  
+      .icon {
+        font-size: 1.5rem;
+        color: $primary;
+  
+        @include media-breakpoint-up(lg) {
+          font-size: 2.5rem;
+        }
+      }
+    }
+  
+    &__pic {
+      max-width: 100%;
+      filter: drop-shadow(0 0 0.75rem $teal);
+    }
+
+    i {
+      color: $secondary;
+      font-size: 2.2rem;
+    }
+}
+  
+  @include media-breakpoint-down(md) {
+    .services-lg-up {
+      display: none;
+    }
+  
+    .services-md-down {
+      display: block;
+    }
+  }
+
+//Languages
+.xl-up {
+  display: flex;
+  justify-content: space-around;
+
+  .col {
+    margin: 0 1vw;
+  }
+}
+
+.lg-down {
+  display: none;
+}
+
+.languages__logo-box {
+  height: 200px;
+  width: 200px;
+
+  img {
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+
+    &:hover {
+      filter: grayscale(120);
+      transition-duration: .5s;
+    }
+  }
+}
+
+@include media-breakpoint-down(lg) {
+  #languages {
+    .xl-up {
+      display: none;
+    }
+  
+    .lg-down {
+      display: block;
+    }
+  
+    .languages__logo-box {
+      height: 170px;
+      width: 170px;
+    }
+  }
+}
+
+@include media-breakpoint-down(md) {
+  .languages__logo-box {
+    height: 150px;
+    width: 150px;
+  }
+}
+
+//Cards
+#credentials {
+  display: flex;
+  justify-content: space-evenly;
+
+  .card {
+    width: 40vw;
+    border: none;
+  }
+}
+
+//About Me
+.abt-mobile {
+  display: none;
+}
+
+.abt-desktop {
+  .abt-item {
+    display: flex;
+    justify-content: space-evenly;
+  }
+}
+
+.abt-img {
+  border: solid 5px $teal;
+}
+
+@media (max-width: 1200px) {
+  .abt-mobile {
+    display: block;
+  }
+  
+  .abt-desktop {
+    display: none;
+  }
+}
+
+//Projects
+#examples {
+  display: flex;
+  margin-left: 15vw;
+}
+
+.dillo {
+  object-fit: contain;
+  
+  img {
+    width: 100%;
+    height: auto;
+  }
+
+  .supermart-img {
+    height: 100%;
+    width: auto;
+  }
+}
+
+#examples2 {
+  display: block;
+  margin-left: 8vw;
+}
+
+//Footer
+footer {
+  background-color: $teal;
+
+  .footer-items {
+    display: flex;
+    justify-content: space-evenly;
+  }
+
+  i {
+    font-size: 2.2rem;
+  }
+}
